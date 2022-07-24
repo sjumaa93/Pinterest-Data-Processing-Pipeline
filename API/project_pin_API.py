@@ -1,3 +1,4 @@
+import json
 from fastapi import FastAPI
 from pydantic import BaseModel
 import uvicorn
@@ -6,7 +7,10 @@ from kafka import KafkaProducer
 
 app = FastAPI()
 
+def serializer(data):
+    return json.dumps(data).encode("utf-8")
 
+producer = KafkaProducer(bootstrap_servers='localhost:9092', value_serializer=serializer)
 
 class Data(BaseModel):
     category: str
@@ -25,6 +29,9 @@ class Data(BaseModel):
 @app.post("/pin/")
 def get_db_row(item: Data):
     data = dict(item)
+    print(data)
+    producer.send(topic = "MyFirstKafkaTopic", value = data)
+
     return item
 
 
