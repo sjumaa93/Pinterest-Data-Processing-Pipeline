@@ -1,0 +1,26 @@
+[
+  "MyFirstKafkaTopic",
+  0,
+  2761,
+  1659881841367,
+  0,
+  null,
+  {
+    "category": "vehicles",
+    "index": 10464,
+    "unique_id": "17051468-cdc5-403f-ba84-79cd90c1f42a",
+    "title": "2009 BMW 7-Series Pictures: Rear Seat",
+    "description": "Road trip",
+    "follower_count": "2k",
+    "tag_list": "Dream Cars,My Dream Car,Bmw Autos,Audi 7,Maserati,Bugatti,Audi Lamborghini,Nova Bmw,Bentley Auto",
+    "is_image_or_video": "image",
+    "image_src": "https://i.pinimg.com/originals/bd/4f/d8/bd4fd8e91320370757a8d9b23d52d1f9.jpg",
+    "downloaded": 1,
+    "save_location": "Local save in /data/vehicles"
+  },
+  [],
+  null,
+  -1,
+  496,
+  -1
+]
