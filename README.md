@@ -6,8 +6,8 @@ Pinterest has world-class machine learning engineering systems. They have billio
 
 # Data Ingestion: Apache Kafka
 - The data source is an infinite posting loop, which simulates a users activity on-site and posts the JSONs to a localhost port.
-- project_pin_API.py contains an API to receive the user posts, it also sets up the kafka producer to add the posts to the topic.
-- consumer_to_s3.py creates the Kafka consumer, and passes all messages it finds in the topic to an s3 bucket.
+- API/project_pin_API.py contains an API to receive the user posts, it also sets up the kafka producer to add the posts to the topic.
+- batch_consumer.py creates the Kafka consumer, and passes all messages it finds in the topic to an s3 bucket.
 
 # Batch Processing: Apache Spark, Apache Cassandra, Presto
 - A spark session reads the data from the s3 bucket, that data is stored in a spark dataframe. With some initial batch cleaning such as:
