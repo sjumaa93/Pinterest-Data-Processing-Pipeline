@@ -14,7 +14,7 @@ Pinterest has world-class machine learning engineering systems. They have billio
     - Converting follower count into a real number, e.g. 10k into 10,000.
     - Dropping colomns with information that isn't useful.
     - Converting strings into integers where neccasary.
-- Cassandra was setup and configure Cassandra locally ready to receive the data from Spark for long term storage.
+- Cassandra was setup and configured locally ready to receive the data from Spark for long term storage.
 - Cassandra is then inegrated with Presto, a powerful data querying engine. This allows us to run ad-hoc queries on the data we have so far.
 
 # Batch Monitoring
